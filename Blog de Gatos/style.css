@@ -11,7 +11,9 @@
     font-size: 62.5%;
 }
 
-body {
+html,
+body, 
+input {
     font-family: 'Mulish', sans-serif;
 }
 
@@ -89,18 +91,59 @@ header form {
     width: min(100%)
 }
 
+button {
+    border-radius: 3.0rem;
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+
+    background-color: #065E7C;
+
+    border: 0;
+    display: flex;
+    gap: 1.0rem;
+    align-self: auto;
+}
+.container h2, main h1 {
+    font-size: 2.4rem;
+}
+
+main p {
+    font-size: 1.6rem;
+}
+
+.description {
+    padding: 1.6rem;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+}
+
+.description h3 {
+    font-size: 1.4rem;
+}
+
+.container h3 {
+    font-size: 1.8rem;
+}
+
+.card {
+    margin-top: 3.2rem;
+    display: grid;
+    
+    grid-template-columns: (1, 1fr);
+    gap: 3.4rem;
+}
+
 footer {
     background-color: #387E96;
-
     animation: move .2s;
     --startY: 100%;
+    text-align:center;
 }
 
 footer span {
-    text-align:center;
-
+    color: #FFF;
     padding: 1.6rem;
-
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
