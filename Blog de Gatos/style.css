@@ -85,6 +85,9 @@ header form {
     object-fit: cover;
 }
 
+.artigo {
+    padding-top: 4.4rem;
+}
 .container {
     padding: 1.6rem 3.2rem;
     margin: 0 auto;
@@ -125,12 +128,18 @@ main p {
     font-size: 1.8rem;
 }
 
+/* artigos */
 .card {
     margin-top: 3.2rem;
     display: grid;
     
     grid-template-columns: (1, 1fr);
     gap: 3.4rem;
+}
+
+.card img {
+    width: 100%;
+    
 }
 
 footer {
