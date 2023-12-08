@@ -1,110 +1,186 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" href="assents/icone.png" type="image/png">
-    <title>Gatos</title>
-
+    
+    <title>Fotoblog</title>
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&family=Montserrat:wght@500&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="blog">
-        <header class="container">
-            <img class="logo" src="assents/logo.svg" alt="logo">
+    <div id="app">
+    <header class="container">
+        <nav>
+            <img class="logo" src="assets/camera.svg" alt="camera">
             
-            <form>
-                <div class="input-wrapper">
-                    <label for="search">Pesquise por artigos</label>
-                    <input id="search" name="text" placeholder="Pesquise por artigos">
-                </div>
-            </form>
-            
-            <img class="avatar" src="https://randomuser.me/api/portraits/women/85.jpg" alt="icon">
-            
-        </header>
-        
-        <main>
-            <div class="artigo">
-                <img src="assents/gato 2.jpg" alt="foto de um gato">
-                <h1>Seriam os gatos astronautas?</h1>
-                <button>
-                    <img src="assents/positivo.png" alt="botão de gostou">
-                </button>
-                <button>
-                    <img src="assents/negativo.png" alt="botão de não gostou">
-                </button>
-                <p>Os gatos são animais fascinantes e cercados de mistérios. De temperamento independente e misterioso, 
-                    esses felinos são conhecidos por sua agilidade, 
-                    elegância e um comportamento muitas vezes imprevisível. 
-                    Contudo, recentemente, uma teoria tem ganhado espaço na internet e entre teóricos de conspiração: 
-                    seriam os gatos astronautas?
-                    A teoria sugere que os gatos não são animais terrestres, 
-                    mas sim seres extraterrestres enviados para realizar uma missão específica em nosso planeta. 
-                Há relatos históricos que apontam para o fato de que os gatos eram considerados seres sagrados em diferentes 
-                culturas e até mesmo associados a figuras divinas. Isso poderia indicar que os gatos têm uma origem muito 
-                mais mística do que se pensava anteriormente.
-                
-                Além disso, há teóricos que acreditam que os felinos possuem habilidades telepáticas e 
-                são capazes de se comunicar com outras espécies alienígenas. 
-                Essa crença baseia-se em relatos de pessoas que afirmam terem visto 
-                gatos reagindo a estímulos que não são perceptíveis aos seres humanos, 
-                ou até mesmo se comportando de maneira incomum durante eventos astronômicos, como uma aurora boreal. 
-                Esses e outros indícios foram interpretados como sinais de que os gatos seriam seres interplanetários.</p>
+            <ul>
+                <li>Home <a href="#"></a></li>
+                <li class="active">Galeria <a href="#"></a></li>
+            </ul>
+
+        </nav>
+
+        <form>
+            <div class="input-wrapper">
+                <label for="search">Pesquise por imagens e coleções</label>
+                <input id="search" name="text" placeholder="Pesquise por imagens e coleções">
             </div>
-            <div class="container">
-                <h2>Artigos relacionados</h2>
-            <aside class="card">
-                <figure class="item">
-                    <img src="assents/gato 1.jpg" alt="foto de um gato">
-                    <figcaption class="description">
-                        <h3>Sábado preguiçoso</h3>
-                        <p>Descubra atividades interessantes para fazer com seu pet durante os finais de semana.</p>
+        </form>
+
+        <img class="avatar" src="https://randomuser.me/api/portraits/women/5.jpg" alt="icon">
+
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Galeria</h1>
+            <section class="gallery">
+                <figure class="item"> 
+                    <img src="https://source.unsplash.com/random?a=1" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Workspace elétrica</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
                     </figcaption>
                 </figure>
-                
-                <figure class="item">
-                    <img src="assents/gato 3.jpg" alt="foto de um gato">
-                    <figcaption class="description">
-                        <h3>Balaio de gatos</h3>
-                        <p>Como evitar confusões entre seus gatíneos e acostumá-los desde filhotes.</p>
+                <figure class="item" style="--delay:.6s"> 
+                    <img src="https://source.unsplash.com/random?a=2" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Dark and red</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
                     </figcaption>
                 </figure>
-                
-                <figure class="item">
-                    <img src="assents/gato 4.jpg" alt="foto de um gato">
-                    <figcaption class="description">
-                        <h3>Cartela de cores</h3>
-                        <p>Seu gato é inverno intenso? Verão profundo? Descubra as cores que mais combinam com seu bichano.</p>
+                <figure class="item" style="--delay:.8s"> 
+                    <img src="https://source.unsplash.com/random?a=3" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Organização e grids</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
                     </figcaption>
                 </figure>
-                
-                <figure class="item">
-                    <img src="assents/gato 5.jpg" alt="foto de um gato">
-                    <figcaption class="description">
-                        <h3>Os gatos sentem frio?</h3>
-                        <p>Preparem-se para a frente fria que vem para o país da melhor maneira possível.</p>
+                <figure class="item" style="--delay:1s"> 
+                    <img src="https://source.unsplash.com/random?a=4" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Colméia</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
                     </figcaption>
                 </figure>
-                
-                <figure class="item">
-                <img src="assents/gato 6.jpg" alt="foto de um gato">
-                <figcaption class="description">
-                    <h3>Conheça o Moacir</h3>
-                    <p>Moacir é o gatinho da semana do nosso blog. Venha conhecer sua história de superação.</p>
-                </figcaption>
-             </figure>
-            </aside>
+                <figure class="item" style="--delay:1.2s"> 
+                    <img src="https://source.unsplash.com/random?a=5" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Setup de escritor</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="item" style="--delay:1.4s"> 
+                    <img src="https://source.unsplash.com/random?a=6" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Ergonomia e cores</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="item" style="--delay:1.6s"> 
+                    <img src="https://source.unsplash.com/random?a=7" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Show de luzes</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="item" style="--delay:1.8s"> 
+                    <img src="https://source.unsplash.com/random?a=8" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Deep purple</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="item" style="--delay:2s"> 
+                    <img src="https://source.unsplash.com/random?a=9" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Multi-Screen</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="item" style="--delay:2.2s"> 
+                    <img src="https://source.unsplash.com/random?a=10" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Workspace elétrica</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="item" style="--delay:2.4s"> 
+                    <img src="https://source.unsplash.com/random?a=11" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Dark and red</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="item" style="--delay:2.6s"> 
+                    <img src="https://source.unsplash.com/random?a=12" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Deep purple</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="item" style="--delay:2.8s"> 
+                    <img src="https://source.unsplash.com/random?a=13" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Organização e grids</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="item" style="--delay:3s"> 
+                    <img src="https://source.unsplash.com/random?a=14" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Colméia</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="item" style="--delay:3.2s"> 
+                    <img src="https://source.unsplash.com/random?a=15" alt="foto aleatória">
+                    <figcaption class="details">
+                        <h2>Setup de escrito</h2>
+                        <div class="tags">
+                            <span>TAG</span>
+                        </div>
+                    </figcaption>
+                </figure>
+            </section>
         </div>
     </main>
-        <footer class="container">
-            <span>© 2023 - Rocketseat Explorer</span>
-        </footer>
-    </div>
+    <footer class="container">
+        <p>© 2023 - Rocketseat Explorer</p>
+    </footer>
+</div>
 </body>
 </html>
